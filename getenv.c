@@ -9,9 +9,9 @@
  */
 char **get_environ(info_t *shell_info)
 {
-	if (!info->environ || shell_info->env_changed)
+	if (!shell_info->environ || shell_info->env_changed)
 	{
-		shell_info->environ = list_to_strings(info->env);
+		shell_info->environ = list_to_strings(shell_info->env);
 		shell_info->env_changed = 0;
 	}
 

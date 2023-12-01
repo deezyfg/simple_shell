@@ -35,7 +35,7 @@ ssize_t input_buf(info_t *shell_info, char **buf, size_t *len)
 			shell_info->linecount_flag = 1;
 			remove_comments(*buf);
 			build_history_list(shell_info, *buf, shell_info->histcount++);
-			/* if (_strchr(*buf, ';')) /* Check if it's a command chain. */
+			if (_strchr(*buf, ';')) /* Check if it's a command chain. */
 			{
 				*len = r;
 				shell_info->cmd_buf = buf;

@@ -101,7 +101,7 @@ int read_history(info_t *shell_info)
 	if (last != i)
 		build_history_list(shell_info, buf + last, linecount++);
 	free(buf);
-	info->histcount = linecount;
+	shell_info->histcount = linecount;
 	while (shell_info->histcount-- >= HIST_MAX)
 		delete_node_at_index(&(shell_info->history), 0);
 	renumber_history(shell_info);

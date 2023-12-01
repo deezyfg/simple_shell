@@ -84,7 +84,7 @@ void check_chain(info_t *shell_info, char *buf, size_t *ptr,
  * Return:
  * - If replaced: 1
  * - otherwise: 0
- */c
+ */
 int replace_alias(info_t *shell_info)
 {
 	int i;

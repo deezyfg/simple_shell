@@ -34,8 +34,9 @@ int unset_alias(info_t *shell_info, char *str)
 		return (1);
 	c = *ptr;
 	*ptr = 0;
-	ret = delete_node_at_index(&(info->alias),
-		get_node_index(info->alias, node_starts_with(info->alias, str, -1)));
+	ret = delete_node_at_index(&(shell_info->alias),
+		get_node_index(shell_info->alias, node_starts_with(shell_info->alias,
+									str, -1)));
 	*ptr = c;
 	return (ret);
 }

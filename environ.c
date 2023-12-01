@@ -49,7 +49,7 @@ int _mysetenv(info_t *shell_info)
 		_eputs("Incorrect number of arguements\n");
 		return (1);
 	}
-	if (_setenv(info, shell_info->argv[1], info->argv[2]))
+	if (_setenv(shell_info, shell_info->argv[1], shell_info->argv[2]))
 		return (0);
 	return (1);
 }

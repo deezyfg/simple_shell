@@ -14,7 +14,7 @@ int _myexit(info_t *shell_info)
 
 	if (shell_info->argv[1])  /* If there is an exit arguement */
 	{
-		exitcheck = _erratoi(shell_info->argv[1]);
+		exit_check = _erratoi(shell_info->argv[1]);
 		if (exit_check == -1)
 		{
 			shell_info->status = 2;

@@ -24,7 +24,7 @@ int hsh(info_t *shell_info, char **av)
 		r = get_input(shell_info);
 		if (r != -1)
 		{
-			set_info(shell_infoinfo, av);
+			set_info(shell_info, av);
 			builtin_ret = find_builtin(shell_info);
 			if (builtin_ret == -1)
 				find_cmd(shell_info);
@@ -75,7 +75,7 @@ int find_builtin(info_t *shell_info)
 		if (_strcmp(shell_info->argv[0], builtintbl[i].type) == 0)
 		{
 			shell_info->line_count++;
-			built_in_ret = builtintbl[i].func(info);
+			built_in_ret = builtintbl[i].func(shell_info);
 			break;
 		}
 	return (built_in_ret);
@@ -114,9 +114,9 @@ void find_cmd(info_t *shell_info)
 	}
 	else
 	{
-		if ((interactive(shell_info) || _getenv(shell_info, "PATH=")
-			|| (shell_info->argv[0][0] == '/') && is_cmd(shell_info,
-								shell_info->argv[0]))
+		if ((interactive(shell_info) || _getenv(shell_info, "PATH="))
+		|| ((shell_info->argv[0][0] == '/') && is_cmd(shell_info,
+								shell_info->argv[0])))
 			fork_cmd(shell_info);
 		else if (*(shell_info->arg) != '\n')
 		{
