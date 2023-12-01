@@ -7,6 +7,7 @@
  *
  * Return: Integer length of the string.
  */
+ 
 int _strlen(char *str)
 {
 	int i = 0;
@@ -30,6 +31,7 @@ int _strlen(char *str)
  * - Positive if s1 > s2.
  * - Zero if s1 == s2.
  */
+
 int _strcmp(char *s1, char *s2)
 {
 	while (*s1 && *s2)
@@ -53,6 +55,7 @@ int _strcmp(char *s1, char *s2)
  *
  * Return: Address of the next character of haystack or NULL.
  */
+
 char *starts_with(const char *haystack, const char *needle)
 {
 	while (*needle)
@@ -69,6 +72,7 @@ char *starts_with(const char *haystack, const char *needle)
  *
  * Return: Pointer to the destination buffer.
  */
+
 char *_strcat(char *dest, char *src)
 {
 	char *ret = dest;

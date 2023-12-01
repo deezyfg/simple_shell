@@ -6,6 +6,7 @@
  *
  * @shell_info: Pointer to the info_t structure.
  */
+ 
 void clear_info(info_t *shell_info)
 {
 	shell_info->arg = NULL;
@@ -20,6 +21,7 @@ void clear_info(info_t *shell_info)
  * @shell_info: Pointer to the info_t structure.
  * @av: Argument vector.
  */
+
 void set_info(info_t *shell_info, char **av)
 {
 	int i = 0;
@@ -53,6 +55,7 @@ void set_info(info_t *shell_info, char **av)
  * @shell_info: Pointer to the info_t structure.
  * @all: True if freeing all fields.
  */
+
 void free_info(info_t *shell_info, int all)
 {
 	ffree(shell_info->argv);

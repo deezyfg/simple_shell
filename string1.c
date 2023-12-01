@@ -8,6 +8,7 @@
  *
  * Return: Pointer to the destination buffer.
  */
+ 
 char *_strcpy(char *dest, char *src)
 {
 	int i = 0;
@@ -30,6 +31,7 @@ char *_strcpy(char *dest, char *src)
  *
  * Return: Pointer to the duplicated string.
  */
+
 char *_strdup(const char *str)
 {
 	int length = 0;
@@ -54,6 +56,7 @@ char *_strdup(const char *str)
  *
  * Return: Nothing.
  */
+
 void _puts(char *str)
 {
 	int i = 0;
@@ -76,6 +79,7 @@ void _puts(char *str)
  * - On success: 1
  * - On error: -1 is returned, and errno is set appropriately.
  */
+
 int _putchar(char c)
 {
 	static int i;

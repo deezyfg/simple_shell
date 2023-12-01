@@ -10,6 +10,7 @@
  * - If the file is an executable command: 1
  * - Otherwise: 0
  */
+ 
 int is_cmd(info_t *shell_info, char *path)
 {
 	struct stat st;
@@ -34,6 +35,7 @@ int is_cmd(info_t *shell_info, char *path)
  *
  * Return: Pointer to the new buffer.
  */
+
 char *dup_chars(char *pathstr, int start, int stop)
 {
 	static char buf[1024];
@@ -57,6 +59,8 @@ char *dup_chars(char *pathstr, int start, int stop)
  * Return:
  * - Full path of the command if found.
  * - NULL otherwise.
+ */
+
 char *find_path(info_t *shell_info, char *pathstr, char *cmd)
 {
 	int i = 0, current_position = 0;
@@ -91,4 +95,3 @@ char *find_path(info_t *shell_info, char *pathstr, char *cmd)
 	}
 	return (NULL);
 }
-

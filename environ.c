@@ -6,6 +6,7 @@
  *
  * Return: Always 0
  */
+ 
 int _myenv(info_t *shell_info)
 {
 	print_list_str(shell_info->env);
@@ -19,6 +20,7 @@ int _myenv(info_t *shell_info)
  *
  * Return: The value of the environment variable, or NULL if not found.
  */
+
 char *_getenv(info_t *shell_info, const char *name)
 {
 	list_t *node = shell_info->env;
@@ -41,6 +43,7 @@ char *_getenv(info_t *shell_info, const char *name)
  *        constant function prototype.
  *  Return: Always 0
  */
+
 int _mysetenv(info_t *shell_info)
 {
 	if (shell_info->argc != 3)
@@ -59,6 +62,7 @@ int _mysetenv(info_t *shell_info)
  *
  *  Return: Always 0.
  */
+
 int _myunsetenv(info_t *shell_info)
 {
 	int i;
@@ -80,6 +84,7 @@ int _myunsetenv(info_t *shell_info)
  *
  * Return: Always 0
  */
+
 int populate_env_list(info_t *info)
 {
 	list_t *node = NULL;
@@ -90,4 +95,3 @@ int populate_env_list(info_t *info)
 	shell_info->env = node;
 	return (0);
 }
-

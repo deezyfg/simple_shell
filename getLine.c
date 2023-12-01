@@ -9,6 +9,7 @@
  *
  * Return: Bytes read.
  */
+ 
 ssize_t input_buf(info_t *shell_info, char **buf, size_t *len)
 {
 	ssize_t r = 0;
@@ -52,6 +53,7 @@ ssize_t input_buf(info_t *shell_info, char **buf, size_t *len)
  *
  * Return: Bytes read.
  */
+
 ssize_t get_input(info_t *shell_info)
 {
 	static char *buf; /* the ';' command chain buffer */
@@ -100,6 +102,7 @@ ssize_t get_input(info_t *shell_info)
  *
  * Return: r.
  */
+
 ssize_t read_buf(info_t *shell_info, char *buf, size_t *i)
 {
 	ssize_t r = 0;
@@ -121,6 +124,7 @@ ssize_t read_buf(info_t *shell_info, char *buf, size_t *i)
  *
  * Return: s.
  */
+
 int _getline(info_t *shell_info, char **ptr, size_t *length)
 {
 	static char buf[READ_BUF_SIZE];

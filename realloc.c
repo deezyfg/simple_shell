@@ -9,6 +9,7 @@
  *
  * Return: A pointer to the memory area str.
  */
+ 
 char *_memset(char *str, char b, unsigned int n)
 {
 	unsigned int i;
@@ -23,6 +24,7 @@ char *_memset(char *str, char b, unsigned int n)
  *
  * @str_array: String array to be freed.
  */
+
 void ffree(char **str_array)
 {
 	char **current_str = str_array;
@@ -43,6 +45,7 @@ void ffree(char **str_array)
  *
  * Return: A pointer to the reallocated block.
  */
+
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
 	char *new_ptr;

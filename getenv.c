@@ -7,6 +7,7 @@
  *
  * Return: Pointer to the array of environment strings.
  */
+ 
 char **get_environ(info_t *shell_info)
 {
 	if (!info->environ || shell_info->env_changed)
@@ -26,6 +27,7 @@ char **get_environ(info_t *shell_info)
  *
  * Return: 1 on success (delete), 0 otherwise.
  */
+
 int _unsetenv(info_t *shell_info, char *var)
 {
 	list_t *node = shell_info->env;
@@ -60,6 +62,7 @@ int _unsetenv(info_t *shell_info, char *var)
  *
  * Return: Always 0.
  */
+
 int _setenv(info_t *shell_info, char *var, char *value)
 {
 	char *buf = NULL;

@@ -9,6 +9,7 @@
  *
  * Return: A pointer to the concatenated string.
  */
+ 
 char *_strncpy(char *dest, char *src, int n)
 {
 	int i, j;
@@ -41,6 +42,7 @@ char *_strncpy(char *dest, char *src, int n)
  *
  * Return: A pointer to the concatenated string.
  */
+
 char *_strncat(char *dest, char *src, int n)
 {
 	int i, j;
@@ -69,6 +71,7 @@ char *_strncat(char *dest, char *src, int n)
  *
  * Return: A pointer to the memory area in the string or NULL if not found.
  */
+
 char *_strchr(char *str, char c)
 {
 	do {
