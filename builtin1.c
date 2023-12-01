@@ -24,7 +24,7 @@ int _myhistory(info_t *shell_info)
  * - On success: 0
  * - On failure: 1
  */
-int unset_alias(info_t *info, char *str)
+int unset_alias(info_t *shell_info, char *str)
 {
 	char *ptr, c;
 	int ret;

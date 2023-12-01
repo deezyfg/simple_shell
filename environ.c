@@ -38,11 +38,10 @@ char *_getenv(info_t *shell_info, const char *name)
 /**
  * _mysetenv - Initializes a new environment variable
  *             or modifies an existing one.
- * @info: Structure containing potential arguments. Used to maintain
+ * @shell_info: Structure containing potential arguments. Used to maintain
  *        constant function prototype.
  *  Return: Always 0
  */
-
 int _mysetenv(info_t *shell_info)
 {
 	if (shell_info->argc != 3)
@@ -83,8 +82,7 @@ int _myunsetenv(info_t *shell_info)
  *
  * Return: Always 0
  */
-
-int populate_env_list(info_t *info)
+int populate_env_list(info_t *shell_info)
 {
 	list_t *node = NULL;
 	size_t i;
