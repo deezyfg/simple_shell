@@ -10,7 +10,6 @@
  * - If the file is an executable command: 1
  * - Otherwise: 0
  */
- 
 int is_cmd(info_t *shell_info, char *path)
 {
 	struct stat st;

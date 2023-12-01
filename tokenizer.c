@@ -9,7 +9,7 @@
  * @d: The delimeter string.
  * Return:
  * - On success: An array of strings
- * - On failure: NULL 
+ * - On failure: NULL
  */
 char **strtow(char *str, char *d)
 {
@@ -58,7 +58,7 @@ char **strtow(char *str, char *d)
  * @d: The delimeter string.
  * Return:
  * - On success: An array of strings
- * - On failure: NULL 
+ * - On failure: NULL
  */
 char **strtow2(char *str, char d)
 {

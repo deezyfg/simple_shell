@@ -6,7 +6,6 @@
  *
  * @shell_info: Pointer to the info_t structure.
  */
- 
 void clear_info(info_t *shell_info)
 {
 	shell_info->arg = NULL;

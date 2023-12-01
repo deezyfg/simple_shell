@@ -7,7 +7,6 @@
  *
  * Return: Integer length of the string.
  */
- 
 int _strlen(char *str)
 {
 	int i = 0;

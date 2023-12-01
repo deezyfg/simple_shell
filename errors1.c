@@ -10,14 +10,13 @@
  * - If no numbers in the string: 0
  * - On error: -1
  */
- 
 int _erratoi(char *str)
 {
 	int i = 0;
 	unsigned long int result = 0;
 
 	if (*str == '+')
-		str++;  /* TODO: Investigate why this causes the main function to return 255.*/
+		str++;  /* TODO: Why this causes the main function to return 255.*/
 	for (i = 0;  str[i] != '\0'; i++)
 	{
 		if (str[i] >= '0' && str[i] <= '9')

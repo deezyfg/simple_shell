@@ -9,7 +9,6 @@
  *
  * Return: A pointer to the concatenated string.
  */
- 
 char *_strncpy(char *dest, char *src, int n)
 {
 	int i, j;

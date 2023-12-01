@@ -73,7 +73,6 @@ typedef struct liststr
  * @readfd: File descriptor from which to read line input.
  * @histcount: History line number count.
  */
- */
 typedef struct passinfo
 {
 	char *arg;
@@ -91,7 +90,7 @@ typedef struct passinfo
 	int env_changed;
 	int status;
 
-	char **cmd_buf; //* Pointer to cmd ; chain buffer, for memory mangement */
+	char **cmd_buf; /* Pointer to cmd ; chain buffer, for memory mangement */
 	int cmd_buf_type; /* CMD_type ||, &&, ; */
 	int readfd;
 	int histcount;

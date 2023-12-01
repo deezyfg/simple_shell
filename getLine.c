@@ -9,7 +9,6 @@
  *
  * Return: Bytes read.
  */
- 
 ssize_t input_buf(info_t *shell_info, char **buf, size_t *len)
 {
 	ssize_t r = 0;

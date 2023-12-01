@@ -6,7 +6,6 @@
  *
  * Return: Always 0
  */
- 
 int _myenv(info_t *shell_info)
 {
 	print_list_str(shell_info->env);

@@ -7,7 +7,6 @@
  *
  * Return: Pointer to the array of environment strings.
  */
- 
 char **get_environ(info_t *shell_info)
 {
 	if (!info->environ || shell_info->env_changed)
@@ -54,7 +53,8 @@ int _unsetenv(info_t *shell_info, char *var)
 }
 
 /**
- * _setenv - Initializes a new environment variable or modifies an existing one.
+ * _setenv - Initializes a new environment variable
+ *           or modifies an existing one.
  *
  * @shell_info: Pointer to the info_t structure.
  * @var: The string representing the environment variable.
