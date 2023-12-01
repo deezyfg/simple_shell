@@ -103,8 +103,8 @@ size_t print_list_str(const list_t *h)
  * @index: The index of the node to be removed.
  *
  * Return:
- * If the node was successfully removed: 1
- * If the node failed to be removed: 0
+ * - If the node was successfully removed: 1
+ * - If the node failed to be removed: 0
  */
 int delete_node_at_index(list_t **head, unsigned int index)
 {
